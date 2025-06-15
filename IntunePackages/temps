@@ -1,1 +1,36 @@
 
+MasterWinget_Intune/
+│
+├── README.md                       # Documentation du projet
+├── LICENSE                         # (optionnel) Licence du projet
+├── .gitignore                      # Fichiers à exclure du dépôt Git
+│
+├── Applications/                  # Chaque application packagée
+│   ├── Chrome/
+│   │   ├── install.ps1
+│   │   ├── uninstall.ps1
+│   │   └── config.json
+│   ├── VLC/
+│   │   └── ...
+│   └── ...
+│
+├── UpdateApplication/             # Scripts pour mettre à jour les applis
+│   ├── update-chrome.ps1
+│   ├── update-vlc.ps1
+│   └── ...
+│
+├── IntunePackages/                # Dossiers prêts à empaqueter pour Intune
+│   ├── Chrome.zip
+│   ├── VLC.zip
+│   └── ...
+│
+├── Logs/                          # Logs d’installation ou d’exécution
+│   └── log.txt
+│
+├── Tools/                         # Outils PowerShell ou tiers (ex : WingetHelper, IntuneWinAppUtil.exe)
+│   └── IntuneWinAppUtil.exe
+│
+└── Scripts/                       # Scripts génériques
+    ├── Create-IntunePackage.ps1
+    ├── Import-WingetApps.ps1
+    └── ...
