@@ -1,0 +1,1 @@
+Get-StartApps | Select-Object DisplayName, AppID | Export-Csv -Path "C:\Office\StartApps.csv" -NoTypeInformation -Encoding UTF8
